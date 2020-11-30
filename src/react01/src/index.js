@@ -1,4 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-render(<h2>Hello World</h2>, document.getElementById("root"));
+var JSX = <h2>Hello World</h2>;
+console.log(JSX);
+
+render(JSX, document.getElementById("root"));
