@@ -1,1 +1,1 @@
-# React-Redux-
+# React+Reduxを使用したモダンフロントエンド開発
