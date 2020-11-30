@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const var1 = "string";
+import { var1, function1 } from "./module";
 
 console.log(var1);
+function1();
 
 const App = () => (
   <div>
