@@ -1,7 +1,20 @@
 import React from "react";
 import { render } from "react-dom";
 
-var JSX = <h2>Hello World</h2>;
-console.log(JSX);
+const title = "Hello World."
+const body = "This is body text."
 
-render(JSX, document.getElementById("root"));
+const returnStrings = () => {
+    return "return Strings."
+}
+
+var reactElement = (
+    <div>
+        <p>{returnStrings()}</p>
+        <p>{Math.random()}</p>
+        <h2>{title}</h2>
+        <p>{body}</p>
+    </div>
+)
+
+render(reactElement, document.getElementById("root"));
