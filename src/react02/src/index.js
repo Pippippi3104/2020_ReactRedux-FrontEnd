@@ -22,3 +22,14 @@ const name5 = (val1, val2) => {
   console.log(val1, val2);
 }
 name5("arg1", "arg2");
+
+const name6 = () => {
+  return "returned value";
+}
+console.log(name6());
+
+const name7 = () => "returned value2"
+console.log(name7());
+
+const name8 = () => console.log("console");
+name8();
