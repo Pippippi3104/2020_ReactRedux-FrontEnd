@@ -3,7 +3,7 @@
 ```
     cd src
     npm install -g create-react-app
-    create-react-app projectName
+    create-react-app projectName (or sudo npx create-react-app projectName)
 ```
 
 ## Reference
