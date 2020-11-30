@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
 
-const returnReactElement = () => {
+const ReturnReactElement = () => {
   return <h2>name</h2>;
 }
 
-render(returnReactElement(), document.getElementById("root"));
+render(<ReturnReactElement />, document.getElementById("root")); 
