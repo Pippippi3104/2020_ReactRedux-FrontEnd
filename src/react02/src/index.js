@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+function name1 () {
+  console.log("name1");
+}
+name1();
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const name2 = () => {
+  console.log("name2");
+}
+name2();
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const name3 = (val) => {
+  console.log(val);
+}
+name3("passed value");
+
+const name4 = val => {
+  console.log(val);
+}
+name4("passed value2");
+
+const name5 = (val1, val2) => {
+  console.log(val1, val2);
+}
+name5("arg1", "arg2");
