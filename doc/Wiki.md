@@ -14,3 +14,7 @@
 ## How to edit class
 * Please check below.
   * src/react08/src/index.js
+
+## How to edit React Class Component
+* Please check below.
+  * src/react09/src/index.js
