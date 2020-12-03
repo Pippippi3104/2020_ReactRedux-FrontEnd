@@ -8,7 +8,15 @@ class Human extends React.Component{
   }
 
   render() {
-    return <h2>{this.state.name}{this.props.age}</h2>;
+    return (
+      <h2 onClick={this.onButtonClick}>
+        {this.state.name}{this.props.age}
+      </h2>
+    );
+  }
+
+  onButtonClick = () => {
+    this.setState({ name: this.state.name + "san" });
   }
 }
 
