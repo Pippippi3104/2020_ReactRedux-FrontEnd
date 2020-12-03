@@ -15,8 +15,8 @@ class Human extends React.Component{
     );
   }
 
-  onButtonClick() {
-    alert("click.")
+  onButtonClick = () => {
+    this.setState({ name: this.state.name + "san" });
   }
 }
 
