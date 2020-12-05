@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import "./App.css";
+
 class H2O extends React.Component {
   constructor(props) {
     super(props);
@@ -21,8 +23,11 @@ class H2O extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>{this.H2OState(this.state.temp)}, { this.state.temp }℃</h2>
+      <div className={this.H2OState(this.state.temp)}>
+        <h2>
+          Phase:{this.H2OState(this.state.temp)}, { this.state.temp }℃
+        </h2>
+
         <button onClick={this.onPlusClick}>+1</button>
         <button onClick={this.onPlus10Click}>+10</button>
         <button onClick={this.onMinusClick}>-1</button>
