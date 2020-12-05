@@ -14,6 +14,10 @@ const deletedArray = todos.filter(todo => (todo.id !== deleteTargetId));
 
 console.log(deletedArray);
 
-render(<App />, document.getElementById("root"));
+const Todos = () => {
+  return <h2>todo</h2>
+};
+
+render(<Todos todos={todos} />, document.getElementById("root"));
 
 
