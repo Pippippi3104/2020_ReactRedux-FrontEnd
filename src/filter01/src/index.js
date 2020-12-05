@@ -5,3 +5,19 @@ const newArray1 = array1.filter((output, index) => {
 });
 
 console.log(newArray1);
+
+
+const array2 = ["nakanishi", "hurukata", "tanaka"];
+
+const newArray2 = array2.filter((output, index) => {
+  return output === "nakanishi"
+});
+
+console.log(newArray2);
+
+
+const newArray3 = array2.filter((output, index) => {
+  return output.length > 7
+});
+
+console.log(newArray3);
