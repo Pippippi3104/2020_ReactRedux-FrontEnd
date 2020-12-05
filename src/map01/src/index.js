@@ -5,3 +5,12 @@ const newArray1 = array1.map((output, index) => {
 });
 
 console.log(newArray1);
+
+
+const array2 = ["tanaka", "nakanishi", "sasaki", "koyama", "oda"];
+
+const newArray2 = array2.map((output, index) => {
+  return "index" + index + " is " + output
+});
+
+console.log(newArray2);
