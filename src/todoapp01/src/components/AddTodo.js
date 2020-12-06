@@ -10,7 +10,7 @@ export class AddTodo extends React.Component {
         return (
             <div>
                 <h2>AddTodo</h2>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <input value={this.state.title} onChange={this.handleChange} />
                     <input type="submit" value="Add to todo list" />
                 </form>
@@ -23,5 +23,9 @@ export class AddTodo extends React.Component {
         console.log(title);
 
         this.setState({ title: title });
+    };
+
+    handleSubmit = event => {
+        alert("click");
     }
 }
