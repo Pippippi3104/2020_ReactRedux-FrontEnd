@@ -26,6 +26,7 @@ export class AddTodo extends React.Component {
     };
 
     handleSubmit = event => {
-        alert("click");
+        event.preventDefault();
+        alert(this.state.title);
     }
 }
