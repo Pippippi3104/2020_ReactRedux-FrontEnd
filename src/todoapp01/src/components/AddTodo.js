@@ -18,7 +18,10 @@ export class AddTodo extends React.Component {
         );
     }
 
-    handleChange = () => {
-        alert("change");
+    handleChange = event => {
+        const title = event.target.value;
+        console.log(title);
+
+        this.setState({ title: title });
     }
 }
