@@ -28,7 +28,10 @@ export class TodoApp extends React.Component {
         );
     }
 
-    addTodo = () => {
-        this.setState({ todos: [...this.state.todos, { id: 100, title: "new" }] });
+    addTodo =title => {
+        this.setState({ 
+            todos: [...this.state.todos, { id: this.state.nextId + 1, title: title }] ,
+            nextId: this.state.nextId + 1
+        });
     }
 }
