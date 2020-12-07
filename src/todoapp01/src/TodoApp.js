@@ -22,9 +22,13 @@ export class TodoApp extends React.Component {
         return (
             <div>
                 <h2>TodoApp</h2>
-                <AddTodo />
+                <AddTodo addTodo={this.addTodo}/>
                 <List todos={this.state.todos} />
             </div>
         );
+    }
+
+    addTodo = () => {
+        this.setState({ todos: [...this.state.todos, { id: 100, title: "new" }] });
     }
 }
