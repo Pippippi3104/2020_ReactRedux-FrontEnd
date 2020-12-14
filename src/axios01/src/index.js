@@ -1,17 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { render } from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import axios from "axios";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+class App extends React.Component {
+  render() {
+    return <button onClick={this.handleDo}>
+      Do
+    </button>;
+  }
+
+  handleDo = () => {
+    const url = "https://developer.mozilla.org/en-US/docs/Web/HTML"
+
+    axios.get(url).then(res => {
+      console.log(res.data);
+      document.body.innerHTML = res.data;
+    });
+  };
+}
+
+render(<App />, document.getElementById("root"));
+
+
