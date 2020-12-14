@@ -6,13 +6,14 @@ export class List extends React.Component {
     }
 
     render() {
-        const list = this.props.todos.map(todo => {
+        const {deleteTodo, todos } = this.props;
+        const list = todos.map(todo => {
             return (
-                <li>
+                <li key={todo.id}>
                     #{todo.id} {todo.title}{""}
                     <button
                         onClick={() => {
-                            this.props.deleteTodo(todo.id);
+                            deleteTodo(todo.id);
                     }}>
                         delete
                     </button>
