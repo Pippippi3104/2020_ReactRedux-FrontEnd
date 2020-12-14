@@ -7,6 +7,9 @@
 * [Todo App](#todo)
 * [Asynchronous Http transaction](#async)
 
+## Free Json data
+* [Json Placeholder](https://jsonplaceholder.typicode.com/)
+
 
 <a id = "react">
 
