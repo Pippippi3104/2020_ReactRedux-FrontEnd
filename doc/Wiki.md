@@ -58,7 +58,7 @@
 
 ## Asynchronous Http transaction
 * Please check below.
-  * src/axois01/src/
+  * src/axois0X/src/
   * Asynchronous.md
 
 ### [Return to Contents](#contents)
