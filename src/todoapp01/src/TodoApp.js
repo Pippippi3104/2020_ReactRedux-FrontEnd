@@ -19,11 +19,12 @@ export class TodoApp extends React.Component {
     }
 
     render() {
+        const { todos } = this.state;
         return (
             <div>
                 <h2>TodoApp</h2>
                 <AddTodo addTodo={this.addTodo}/>
-                <List deleteTodo={this.deleteTodo} todos={this.state.todos} />
+                <List deleteTodo={this.deleteTodo} todos={todos} />
             </div>
         );
     }

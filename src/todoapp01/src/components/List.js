@@ -8,7 +8,7 @@ export class List extends React.Component {
     render() {
         const list = this.props.todos.map(todo => {
             return (
-                <li>
+                <li key={todo.id}>
                     #{todo.id} {todo.title}{""}
                     <button
                         onClick={() => {
