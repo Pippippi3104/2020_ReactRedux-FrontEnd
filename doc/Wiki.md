@@ -6,6 +6,7 @@
 * [React](#react)
 * [Todo App](#todo)
 * [Asynchronous Http transaction](#async)
+* [Giphy API](#giphy)
 
 ## Free Json data
 * [Json Placeholder](https://jsonplaceholder.typicode.com/)
@@ -66,6 +67,14 @@
 
 ### [Return to Contents](#contents)
 
+
+<a id = "giphy">
+
+## Giphy API Key
+* Please check below.
+  * src/axois0X/src/
+
+### [Return to Contents](#contents)
 
 
 
