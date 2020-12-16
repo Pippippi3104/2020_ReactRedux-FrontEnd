@@ -15,7 +15,12 @@ class App extends React.Component {
     this.state = {giphyList: []};
   }
 
+  componentDidMount() {
+    this.giphyApi();
+  }
+
   render() {
+    console.log(this.state.giphyList);
     return <div>app</div>
   }
 
@@ -24,12 +29,10 @@ class App extends React.Component {
       console.log(res.data);
     
       const data = res.data.data;
-      const imageUrl = data[0].images.downsized.url;
-      console.log(imageUrl)
-    
-      const img = document.createElement("img");
-      img.src = imageUrl;
-      document.body.appendChild(img);
+      const imageUrlList = data.map(item => item.images.downsized.url);
+      console.log(imageUrlList)
+
+      this.setState({ giphyList: imageUrlList});
     });
   }
 }
