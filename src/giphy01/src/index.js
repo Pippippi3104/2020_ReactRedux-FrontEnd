@@ -3,6 +3,8 @@ import { render } from "react-dom";
 
 import axios from "axios";
 
+import { Search } from "./component/Search"
+
 const search = "cat";
 const key = "ssCR8wE0aNO91sTn6xbsvCjkOplTab6M";
 const limit = 10;
@@ -32,7 +34,11 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.giphyList);
-    return <div>{this.renderImageList(this.state.giphyList)}</div>
+    return (
+      <div>
+        <Search />
+        {this.renderImageList(this.state.giphyList)}
+      </div>);
   }
 
   giphyApi() {
