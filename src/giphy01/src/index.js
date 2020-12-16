@@ -3,11 +3,7 @@ import { render } from "react-dom";
 
 import axios from "axios";
 
-const search = "cat";
-const key = "ssCR8wE0aNO91sTn6xbsvCjkOplTab6M";
-const limit = 10;
-
-const url = "https://api.giphy.com/v1/gifs/search?q="+ search +"&api_key="+ key +"&limit=$"+ limit;
+import { Search } from "./component/Search"
 
 class App extends React.Component {
   constructor() {
@@ -26,16 +22,21 @@ class App extends React.Component {
     return <ul>{imageList}</ul>;
   }
 
-  componentDidMount() {
-    this.giphyApi();
-  }
-
   render() {
     console.log(this.state.giphyList);
-    return <div>{this.renderImageList(this.state.giphyList)}</div>
+    return (
+      <div>
+        <Search search={this.giphyApi} />
+        {this.renderImageList(this.state.giphyList)}
+      </div>);
   }
 
-  giphyApi() {
+  giphyApi = target => {
+    const search = target;
+    const key = "ssCR8wE0aNO91sTn6xbsvCjkOplTab6M";
+    const limit = 10;
+    const url = "https://api.giphy.com/v1/gifs/search?q="+ search +"&api_key="+ key +"&limit=$"+ limit;
+
     axios.get(url).then(res => {
       console.log(res.data);
     
