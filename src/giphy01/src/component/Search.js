@@ -9,10 +9,10 @@ export class Search extends React.Component {
     render() {
         return (
             <div>
-                <h2>AddTodo</h2>
+                <h2>Find Your GIF</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input value={this.state.title} onChange={this.handleChange} />
-                    <input type="submit" value="Add to todo list" />
+                    <input type="submit" value="Search" />
                 </form>
             </div>
         );
@@ -27,7 +27,7 @@ export class Search extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        this.props.addTodo(this.state.title);
+        this.props.search(this.state.title);
         this.setState({ title: "" });
     }
 }

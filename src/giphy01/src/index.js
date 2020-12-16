@@ -5,12 +5,6 @@ import axios from "axios";
 
 import { Search } from "./component/Search"
 
-const search = "cat";
-const key = "ssCR8wE0aNO91sTn6xbsvCjkOplTab6M";
-const limit = 10;
-
-const url = "https://api.giphy.com/v1/gifs/search?q="+ search +"&api_key="+ key +"&limit=$"+ limit;
-
 class App extends React.Component {
   constructor() {
     super();
@@ -28,20 +22,21 @@ class App extends React.Component {
     return <ul>{imageList}</ul>;
   }
 
-  componentDidMount() {
-    this.giphyApi();
-  }
-
   render() {
     console.log(this.state.giphyList);
     return (
       <div>
-        <Search />
+        <Search search={this.giphyApi} />
         {this.renderImageList(this.state.giphyList)}
       </div>);
   }
 
-  giphyApi() {
+  giphyApi = target => {
+    const search = target;
+    const key = "ssCR8wE0aNO91sTn6xbsvCjkOplTab6M";
+    const limit = 10;
+    const url = "https://api.giphy.com/v1/gifs/search?q="+ search +"&api_key="+ key +"&limit=$"+ limit;
+
     axios.get(url).then(res => {
       console.log(res.data);
     
