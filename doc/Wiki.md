@@ -7,6 +7,7 @@
 * [Todo App](#todo)
 * [Asynchronous Http transaction](#async)
 * [Giphy API](#giphy)
+* [Redux](#redux)
 
 ## Free Json data
 * [Json Placeholder](https://jsonplaceholder.typicode.com/)
@@ -76,5 +77,13 @@
 
 ### [Return to Contents](#contents)
 
+
+<a id = "redux">
+
+## Redux
+* Please check below.
+  * src/axois0X/src/
+
+### [Return to Contents](#contents)
 
 

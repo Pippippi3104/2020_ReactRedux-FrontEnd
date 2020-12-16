@@ -5,6 +5,8 @@ import axios from "axios";
 
 import { Search } from "./component/Search"
 
+import "./App.css";
+
 class App extends React.Component {
   constructor() {
     super();
@@ -15,11 +17,11 @@ class App extends React.Component {
     const imageList = list.map(url => {
       return (
         <li>
-          <img src={url} />
+          <img className="image" src={url} />
         </li>);
     });
 
-    return <ul>{imageList}</ul>;
+    return <ul className="list">{imageList}</ul>;
   }
 
   render() {
