@@ -82,7 +82,7 @@
 
 ## Redux
 * Please check below.
-  * src/axois0X/src/
+  * src/redux0X/src/
 
 ### [Return to Contents](#contents)
 
