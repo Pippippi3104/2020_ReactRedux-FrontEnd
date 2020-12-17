@@ -2,13 +2,13 @@ import React from "react";
 import { render } from "react-dom";
 
 import { createStore } from "redux";
-import reducer from "./reducers/reducer";
+import rootReducer from "./reducers";
 
 import { Provider } from "react-redux";
 
 import App from "./containers/App";
 
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 console.log(store);
 
