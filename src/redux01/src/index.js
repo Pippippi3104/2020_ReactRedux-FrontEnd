@@ -1,17 +1,6 @@
 import { createStore } from "redux";
 
-const reducer = (state = 0, action) => {
-  switch (action.type) {
-    case "PLUS_ONE":
-      return state + 1;
-
-    case "MINUS_ONE":
-      return state - 1;
-  
-    default:
-      return state;
-  }
-};
+import reducer from "./reducer";
 
 const store = createStore(reducer);
 
@@ -25,4 +14,9 @@ store.dispatch({ type: "PLUS_ONE"});
 store.dispatch({ type: "PLUS_ONE"});
 store.dispatch({ type: "MINUS_ONE"});
 store.dispatch({ type: "MINUS_ONE"});
+
+store.dispatch({ type: "PLUS", payload: { num: 1 }});
+store.dispatch({ type: "PLUS", payload: { num: 10 }});
+store.dispatch({ type: "MINUS", payload: { num: 1 }});
+store.dispatch({ type: "MINUS", payload: { num: 10 }});
 
