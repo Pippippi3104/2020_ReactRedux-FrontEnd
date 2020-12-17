@@ -1,8 +1,10 @@
 import React from "react";
 
-const App = ({ number, plus, minus }) =>
+const App = ({ number, day, title, plus, minus }) =>
   <div>
-    <h2>App{number}</h2>
+    <h2>
+      {title} {number} {day}
+    </h2>
     <button onClick={() => {
       plus(10);
     }}>
