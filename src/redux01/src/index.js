@@ -4,6 +4,9 @@ const reducer = (state = 0, action) => {
   switch (action.type) {
     case "PLUS_ONE":
       return state + 1;
+
+    case "MINUS_ONE":
+      return state - 1;
   
     default:
       return state;
@@ -20,4 +23,6 @@ store.subscribe(() => {
 
 store.dispatch({ type: "PLUS_ONE"});
 store.dispatch({ type: "PLUS_ONE"});
+store.dispatch({ type: "MINUS_ONE"});
+store.dispatch({ type: "MINUS_ONE"});
 
