@@ -1,17 +1,6 @@
 import { createStore } from "redux";
 
-const reducer = (state = 0, action) => {
-  switch (action.type) {
-    case "PLUS_ONE":
-      return state + 1;
-
-    case "MINUS_ONE":
-      return state - 1;
-  
-    default:
-      return state;
-  }
-};
+import reducer from "./reducer";
 
 const store = createStore(reducer);
 
