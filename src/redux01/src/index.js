@@ -4,6 +4,10 @@ import { render } from "react-dom";
 import { createStore } from "redux";
 import reducer from "./reducer";
 
+import { Provider } from "react-redux";
+
+import App from "./App";
+
 const store = createStore(reducer);
 
 console.log(store);
@@ -12,7 +16,9 @@ store.subscribe(() => {
   console.log(store.getState());
 });
 
-const App = () => <h2>App</h2>;
-
-render(<App />, document.getElementById("root"));
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>, 
+  document.getElementById("root"));
 
