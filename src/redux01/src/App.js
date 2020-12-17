@@ -2,11 +2,19 @@ import React from "react";
 import { connect } from "react-redux";
 
 const App = ({ number, plus, minus }) =>
-  <h2 onClick={() => {
-    plus(10);
-  }}>
-    App{number}
-  </h2>;
+  <div>
+    <h2>App{number}</h2>
+    <button onClick={() => {
+      plus(10);
+    }}>
+      +10
+    </button>
+    <button onClick={() => {
+      minus(10);
+    }}>
+      -10
+    </button>
+  </div>
 
 const mapStateToProps = state => {
   return {
