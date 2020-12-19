@@ -17,12 +17,17 @@ export const asyncMinus = num => {
     };
 };
 
+export const changeTitle = title => {
+    return { type: "CHANGE_TITlE", payload: { title: title }};
+};
+
 export const getJson = () => {
     return dispatch => {
         const url = "https://jsondata.okiba.me/v1/json/lXGHM201219023806";
 
         axios.get(url).then(res => {
             console.log(res.data);
+            dispatch(changeTitle(res.data.member[0].name));
         });
     };
 };
