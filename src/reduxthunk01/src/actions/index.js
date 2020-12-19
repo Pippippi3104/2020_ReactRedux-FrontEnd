@@ -23,6 +23,7 @@ export const changeTitle = title => {
 
 export const getJson = () => {
     return dispatch => {
+        dispatch({ type: "WAIT" });
         const url = "https://jsondata.okiba.me/v1/json/lXGHM201219023806";
 
         axios.get(url).then(res => {
