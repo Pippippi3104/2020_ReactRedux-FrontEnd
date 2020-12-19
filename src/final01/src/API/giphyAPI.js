@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const giphyApi = word => {
+const giphyAPI = word => {
     const search = word;
     const key = "ssCR8wE0aNO91sTn6xbsvCjkOplTab6M";
     const limit = 10;
@@ -9,4 +9,4 @@ const giphyApi = word => {
     return axios.get(url)
   };
 
-  export default giphyApi;
+  export default giphyAPI;
