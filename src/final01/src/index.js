@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from "react-dom";
 
 import App from "./App";
+import "./App.css";
 
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
