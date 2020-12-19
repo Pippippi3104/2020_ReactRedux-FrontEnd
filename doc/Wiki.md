@@ -8,6 +8,7 @@
 * [Asynchronous Http transaction](#async)
 * [Giphy API](#giphy)
 * [Redux](#redux)
+* [Redux-thunk](#reduxThunk)
 
 ## Free Json data
 * [Json Placeholder](https://jsonplaceholder.typicode.com/)
@@ -83,6 +84,15 @@
 ## Redux
 * Please check below.
   * src/redux0X/src/
+
+### [Return to Contents](#contents)
+
+
+<a id = "reduxThunk">
+
+## Redux-thunk
+* Please check below.
+  * src/reduxthunk0X/src/
 
 ### [Return to Contents](#contents)
 
