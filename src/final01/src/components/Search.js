@@ -7,11 +7,12 @@ class Search extends React.Component {
     }
 
     render() {
+        const { buttonText } = this.props;
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <input value={this.state.title} onChange={this.handleChange} />
-                    <input type="submit" value="Find your GIFs" />
+                    <input type="submit" value={buttonText} />
                 </form>
             </div>
         );
