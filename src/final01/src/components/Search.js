@@ -9,10 +9,9 @@ class Search extends React.Component {
     render() {
         return (
             <div>
-                <h2>AddTodo</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input value={this.state.title} onChange={this.handleChange} />
-                    <input type="submit" value="Add to todo list" />
+                    <input type="submit" value="Find your GIFs" />
                 </form>
             </div>
         );
