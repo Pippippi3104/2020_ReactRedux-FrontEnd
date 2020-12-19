@@ -9,8 +9,6 @@ import { Provider } from "react-redux";
 
 import rootReducer from "./reducers";
 
-import getUrls from "./actions/getUrls";
-
 const middleWares = [thunk];
 
 const store = createStore(rootReducer, applyMiddleware(...middleWares));
@@ -23,6 +21,5 @@ render(
   </Provider>, document.getElementById("root")
 );
 
-store.dispatch(getUrls("cat"));
 
 
