@@ -16,11 +16,11 @@ class App extends React.Component {
       console.log(member.age);
       return (
         <li>
-          {member.name} {member.age}
-          aaa
+          {index} {member.name} {member.age}
         </li>
       );
     });
+    return <ul>{memberList}</ul>;
   }
 
   render() {
@@ -34,17 +34,17 @@ class App extends React.Component {
   }
 
   getJson = () => {
-    /* const url = "https://jsonplaceholder.typicode.com/todos";
+    const url = "https://jsondata.okiba.me/v1/json/lXGHM201219023806";
 
     axios.get(url).then(res => {
-      console.log(res.data[0]);
-      const array = {member: res.data};
+      console.log(res.data);
+      const array = (res.data);
       this.setState(array);
-    }); */
+    });
 
-    var array = require( "./data.json" );
+    /* var array = require( "./data.json" );
     console.log(array);
-    this.setState(array);
+    this.setState(array); */
   }
 }
 

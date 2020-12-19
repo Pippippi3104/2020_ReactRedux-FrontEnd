@@ -13,6 +13,10 @@
 ## Free Json data
 * [Json Placeholder](https://jsonplaceholder.typicode.com/)
 
+## Make WebAPI (Json data)
+* [最短30秒でJSON形式のWEB APIを公開](https://json.okiba.me/)
+* [【個人メモ】JSON Serverを使って手っ取り早くWebAPIのモックアップを作る](https://qiita.com/futoase/items/2859a60c8b240da70572)
+
 
 <a id = "react">
 
