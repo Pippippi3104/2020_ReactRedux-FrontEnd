@@ -3,6 +3,8 @@ import { render } from "react-dom";
 
 import App from "./App";
 
+import giphyApi from "./API/giphyAPI";
+
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 
@@ -17,5 +19,8 @@ render(
   </Provider>, document.getElementById("root")
 );
 
+giphyApi("cat").then(res => {
+  console.log(res.data);
+})
 
 
